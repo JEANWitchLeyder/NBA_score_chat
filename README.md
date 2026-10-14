@@ -1,2 +1,6 @@
-# NBA_score_chat
-A small vanilla JavaScript project displaying seven games between Golden State and Houston from each team's perspective.
+# NBA Game Results
+A small JavaScript practice project displaying Golden State vs Houston
+scores, with wins in green, losses in red, and winning scores in bold.
+
+Practiced nested objects, destructuring, arrow functions, DOM creation,
+and conditional CSS classes.
