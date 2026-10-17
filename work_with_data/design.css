@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 32px 16px;
+    background-color: #f3f4f6;
+    color: #243042;
+    font-family: Arial, sans-serif;
+  }
+  
+  #dashboard {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: white;
+    border-radius: 12px;
+  }
+  
+  #dashboard-title {
+    margin: 0 0 24px;
+  }
+  
+  .container {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    transition: background-color 200ms, border-color 200ms;
+  }
+  
+  .container h3 {
+    margin: 0 0 16px;
+  }
+  
+  #client-list {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .client {
+    padding: 12px 16px;
+    background-color: #f3f4f6;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: background-color 200ms, border-color 200ms;
+  }
+  
+  #client-summary,
+  #document-summary {
+    color: #596579;
+  }
+  
+  #dashboard-footer {
+    padding-top: 16px;
+    border-top: 1px solid #d1d5db;
+    font-size: 14px;
+    color: #596579;
+  }
+  
+  /* Classes to add or remove with JavaScript */
+  
+  .highlighted {
+    background-color: #fff3bf;
+    border-color: #d69e00;
+  }
+  
+  .selected {
+    background-color: #dbeafe;
+    border-color: #2563eb;
+  }
+  
+  .large-text {
+    font-size: 24px;
+  }
+  
+  .hidden {
+    display: none;
+  }

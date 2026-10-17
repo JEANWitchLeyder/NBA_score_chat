@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing and Manipulating data</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <!---
+    <p id="my-paragraph"><b>I love you</b></p>
+    
+    <form
+  id="client-form"
+  class="registration-form"
+  action="/practice/register"
+  method="post"
+  enctype="multipart/form-data"
+  autocomplete="on"
+  aria-labelledby="form-title"
+  data-purpose="dom-practice"
+>
+  <a href="https://www.google.com" class="google-link">Google</a>
+  <img src="" alt="">
+  <h2 id="form-title">Inscription d’un client fictif</h2>
+
+  <fieldset>
+    <legend>Informations personnelles</legend>
+
+    <label for="full-name">Nom complet</label>
+    <input
+      type="text"
+      id="full-name"
+      name="fullName"
+      class="form-input"
+      value="Clara Joseph"
+      placeholder="Ex. : Clara Joseph"
+      minlength="3"
+      maxlength="80"
+      autocomplete="name"
+      required
+      data-field="identity"
+    >
+
+    <label for="email">Adresse e-mail</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      class="form-input"
+      value="clara@example.com"
+      placeholder="nom@example.com"
+      autocomplete="email"
+      required
+    >
+
+    <label for="phone">Téléphone</label>
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      class="form-input"
+      placeholder="8 chiffres"
+      inputmode="numeric"
+      pattern="[0-9]{8}"
+      maxlength="8"
+      autocomplete="tel"
+      aria-describedby="phone-help"
+    >
+    <small id="phone-help">
+      Exercice : saisir exactement huit chiffres, sans espaces.
+    </small>
+
+    <label for="birth-date">Date de naissance</label>
+    <input
+      type="date"
+      id="birth-date"
+      name="birthDate"
+      min="1900-01-01"
+      max="2026-10-14"
+      autocomplete="bday"
+    >
+  </fieldset>
+
+  <fieldset>
+    <legend>Dossier du laboratoire</legend>
+
+    <label for="client-code">Code du dossier</label>
+    <input
+      type="text"
+      id="client-code"
+      name="clientCode"
+      value="LAB-001"
+      readonly
+    >
+
+    <label for="city">Ville</label>
+    <select id="city" name="city" required>
+      <option value="" disabled>Choisir une ville</option>
+      <option value="jacmel" selected>Jacmel</option>
+      <option value="hinche">Hinche</option>
+      <option value="jeremie">Jérémie</option>
+    </select>
+
+    <label for="document-count">Nombre de documents</label>
+    <input
+      type="number"
+      id="document-count"
+      name="documentCount"
+      value="2"
+      min="0"
+      max="10"
+      step="1"
+      required
+    >
+
+    <label for="identity-file">Document fictif à joindre</label>
+    <input
+      type="file"
+      id="identity-file"
+      name="identityFile"
+      accept=".pdf,.png,.jpg,.jpeg"
+      aria-describedby="file-help"
+    >
+    <small id="file-help">
+      Utiliser uniquement un fichier de test.
+    </small>
+
+    <label for="notes">Notes</label>
+    <textarea
+      id="notes"
+      name="notes"
+      rows="4"
+      cols="40"
+      maxlength="500"
+      placeholder="Notes sur le dossier fictif"
+    ></textarea>
+  </fieldset>
+
+  <fieldset>
+    <legend>Préférences de contact</legend>
+
+    <label>
+      <input
+        type="radio"
+        name="contactMethod"
+        value="email"
+        checked
+      >
+      E-mail
+    </label>
+
+    <label>
+      <input
+        type="radio"
+        name="contactMethod"
+        value="phone"
+      >
+      Téléphone
+    </label>
+
+    <label for="consent">
+      <input
+        type="checkbox"
+        id="consent"
+        name="consent"
+        value="accepted"
+        required
+      >
+      Je confirme utiliser des données fictives.
+    </label>
+  </fieldset>
+
+  <input type="hidden" name="source" value="javascript-lab">
+
+  <button
+    type="submit"
+    id="submit-button"
+    name="intent"
+    value="register"
+    title="Envoyer le formulaire de pratique"
+  >
+    Enregistrer
+  </button>
+
+  <button type="reset" id="reset-button">
+    Réinitialiser
+  </button>
+
+  <button type="button" id="preview-button" disabled>
+    Aperçu indisponible
+  </button>
+</form>
+   ---->
+
+   <section id="dashboard">
+    <h2 id="dashboard-title">Tableau de bord fictif</h2>
+  
+    <div id="client-container" class="container">
+      <h3 id="client-title">Clients</h3>
+  
+      <ul id="client-list">
+        <li id="client-1" class="client">Clara Joseph</li>
+        <li id="client-2" class="client">Marc Antoine</li>
+        <li id="client-3" class="client">Élise Paul</li>
+      </ul>
+  
+      <p id="client-summary">Trois clients fictifs</p>
+    </div>
+  
+    <div id="document-container" class="container">
+      <h3 id="document-title">Documents</h3>
+      <p id="document-summary">Deux documents à vérifier</p>
+    </div>
+  
+    <footer id="dashboard-footer">Laboratoire JavaScript</footer>
+  </section>
+    <script src="script.js"></script>
+</body>
+</html>

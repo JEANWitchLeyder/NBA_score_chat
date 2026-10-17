@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recherche de client — laboratoire</title>
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+  <main>
+    <h1>Recherche de client</h1>
+
+    <label for="client-search">Nom du client fictif</label>
+    <input
+      id="client-search"
+      type="text"
+      placeholder="Ex. : Clara Joseph"
+    >
+
+    <p id="search-preview">Aucun nom saisi</p>
+
+    <button id="search-button" type="button">
+      <span>Rechercher</span>
+    </button>
+
+    <p id="search-status" aria-live="polite">
+      En attente d’une recherche
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
